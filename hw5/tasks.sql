@@ -1,3 +1,4 @@
+ОПЕРАТОРЫ, ФИЛЬТРАЦИЯ, СОРТИРОВКА И ОГРАНИЧЕНИЕ
 Задание 1
 UPDATE user SET created_at = NOW(), update_at = NOW();
 
