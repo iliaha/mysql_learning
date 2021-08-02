@@ -15,3 +15,13 @@ SELECT * FROM users where (
     
 Задание 5.
 SELECT * FROM catalogs WHERE id IN (5, 1, 2) ORDER BY FIND_IN_SET(id, '5,1,2');
+
+
+АГРЕГАЦИЯ ДАННЫХ
+Задание1.
+
+SELECT ROUND(AVG(TIMESTAMPDIFF(YEAR, birthday_at, NOW()), 2) AS avg_age FROM users;
+             
+Задание 2.
+             
+SELECT COUNT(*) AS total, WEEKDAY(CONCAT(YEAR(NOW()), SUBSTR(birthday_at, 5))) as week_day FROM user GROUP BY week_day;
